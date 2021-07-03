@@ -1,7 +1,5 @@
 function setup() {
 createCanvas(500, 500);
-  line(width/2,0,width/2,height);
-  line(0, height/2, width, height/2);
 };
 function draw() {
 
@@ -41,4 +39,12 @@ for (let i = 0; i < 10; i++) {
     line(width/2, height - i*25,width + i*25, height);
     line(width/2 + i*25, height/2, width, height - i*25);
   }
+
+  troke(0);
+ line(width/2,0,width/2,height);
+  line(0, height/2, width, height/2);
+  line(0,0,0,500);
+  line(0,0,500,0);
+  line(500,0,500,500);
+  line(0,500,500,500);
 };
