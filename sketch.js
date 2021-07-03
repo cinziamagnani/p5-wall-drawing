@@ -4,7 +4,7 @@ createCanvas(500, 500);
   line(0, height/2, width, height/2);
 };
 function draw() {
-    
+
     stroke(127);
     strokeWeight(10);
     for (let posX=0; posX < 10; posX++) {
@@ -34,4 +34,11 @@ for (let posiX = 0; posiX < 10; posiX++) {
     
   }
 }
+
+stroke(0,0,255);
+strokeWeight(10);
+for (let i = 0; i < 10; i++) {
+    line(width/2, height - i*25,width + i*25, height);
+    line(width/2 + i*25, height/2, width, height - i*25);
+  }
 };
